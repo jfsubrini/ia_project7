@@ -1,0 +1,8 @@
+numpy
+tensorflow-cpu
+fastapi
+contractions
+nltk
+pickle5
+gunicorn
+uvicorn
