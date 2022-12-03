@@ -3,7 +3,7 @@
 Created by Jean-François Subrini on the 29th of November 2022.
 Creation of a simple sentiment analysis REST API 
 using the FastAPI framework and a LSTM model (created in the Notebook 2).
-This REST API has been deployed on Heroku.
+This REST API has been deployed on Heroku (https://ia-project7.herokuapp.com/docs).
 """
 ### IMPORTS ###
 # Importation of Python modules and methods.
@@ -23,6 +23,9 @@ from tensorflow.keras.preprocessing import sequence
 import nltk
 from nltk.stem import WordNetLemmatizer
 from nltk.tokenize import TweetTokenizer
+nltk.download('averaged_perceptron_tagger')
+nltk.download('wordnet')
+nltk.download('omw-1.4')
 ###---###
 
 # Loading the selected LSTM model.
